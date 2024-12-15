@@ -25,9 +25,9 @@ const allowedUserIds = [''];
 
     console.log('');
     await client.start({
-        phoneNumber: async () => await input.text('Номер: '),
-        password: async () => await input.text('Пароль: '),
-        phoneCode: async () => await input.text('Код: '),
+        phoneNumber: async () => await input.text('Number: '),
+        password: async () => await input.text('Password: '),
+        phoneCode: async () => await input.text('Code: '),
         onError: (err) => console.log(err),
     });
 
@@ -37,7 +37,7 @@ const allowedUserIds = [''];
         const message = event.message;
         const senderId = message.senderId.value.toString();
 
-        console.log(`\x1b[36mID отправителя: \x1b[1m${senderId}\x1b[0m`);
+        console.log(`\x1b[36mID: \x1b[1m${senderId}\x1b[0m`);
 
         const userMessage = message.message.trim();
       
