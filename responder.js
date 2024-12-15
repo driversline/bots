@@ -12,9 +12,9 @@ bot.on('text', (ctx) => {
     const userId = ctx.message.from.id;
     const chatId = ctx.message.chat.id;
 
-    console.log(`TEXT MESSAGE от ${userId} в чате ${chatId}: ${userMessage}`);
+    console.log(`TEXT MESSAGE from ${userId} in chat ${chatId}: ${userMessage}`);
 
-    rl.question(`Ответ для ${userId}: `, (answer) => {
+    rl.question(`Reply to ${userId}: `, (answer) => {
         bot.telegram.sendMessage(chatId, answer);
     });
 });
@@ -24,7 +24,7 @@ bot.on('sticker', (ctx) => {
     const userId = ctx.message.from.id;
     const chatId = ctx.message.chat.id;
 
-    console.log(`STIKER от ${userId} в чате ${chatId}: ${stickerId}`);
+    console.log(`STICKER from ${userId} in chat ${chatId}: ${stickerId}`);
 
     bot.telegram.sendSticker(ownerId, stickerId);
 });
@@ -34,7 +34,7 @@ bot.on('photo', (ctx) => {
     const userId = ctx.message.from.id;
     const chatId = ctx.message.chat.id;
 
-    console.log(`PHOTO от ${userId} в чате ${chatId}: ${photoId}`);
+    console.log(`PHOTO from ${userId} in chat ${chatId}: ${photoId}`);
 
     bot.telegram.sendPhoto(ownerId, photoId);
 });
@@ -44,17 +44,17 @@ bot.on('animation', (ctx) => {
     const userId = ctx.message.from.id;
     const chatId = ctx.message.chat.id;
 
-    console.log(`GIF от ${userId} в чате ${chatId}: ${gifId}`);
+    console.log(`GIF from ${userId} in chat ${chatId}: ${gifId}`);
 
     bot.telegram.sendAnimation(ownerId, gifId);
 });
 
 bot.launch()
     .then(() => {
-        console.log('Включен.');
+        console.log('Bot is running.');
     })
     .catch((error) => {
-        console.error('Ошибка.:', error);
+        console.error('Error:', error);
     });
 
 process.once('SIGINT', () => {
