@@ -37,7 +37,7 @@ const allowedUserIds = [''];
         const message = event.message;
         const senderId = message.senderId.value.toString();
 
-        console.log(`\x1b[36mID: \x1b[1m${senderId}\x1b[0m`);
+        console.log(`\x1b[36mId: \x1b[1m${senderId}\x1b[0m`);
 
         const userMessage = message.message.trim();
       
