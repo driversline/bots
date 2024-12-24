@@ -51,7 +51,7 @@ bot.on('animation', (ctx) => {
 
 bot.launch()
     .then(() => {
-        console.log('Bot is running.');
+        console.log('Online.');
     })
     .catch((error) => {
         console.error('Error:', error);
