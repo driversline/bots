@@ -7,6 +7,7 @@ const input = require('input');
 const apiId = ;
 const apiHash = '';
 const sessionFilePath = path.join(process.env.HOME, '/ / dir / /', '/ / file / /');
+// e.g // const sessionFilePath = path.join(process.env.HOME, 'telegram', 'session.txt');
 
 let stringSession;
 try {
