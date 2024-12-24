@@ -6,8 +6,8 @@ const { NewMessage } = require('telegram/events');
 const input = require('input');
 const apiId = ;
 const apiHash = '';
-const sessionFilePath = path.join(process.env.HOME, '/ / dir / /', '/ / file / /');
-// e.g // const sessionFilePath = path.join(process.env.HOME, 'telegram', 'session.txt');
+const sessionFilePath = path.join(process.env.HOME, '/ /', '/ /');
+// const sessionFilePath = path.join(process.env.HOME, 'telegram', 'session.txt'); //
 
 let stringSession;
 try {
@@ -38,7 +38,7 @@ const allowedUserIds = [''];
         const message = event.message;
         const senderId = message.senderId.value.toString();
 
-        console.log(`\x1b[36mId: \x1b[1m${senderId}\x1b[0m`);
+        console.log(`\x1b[36mID: \x1b[1m${senderId}\x1b[0m`);
 
         const userMessage = message.message.trim();
       
