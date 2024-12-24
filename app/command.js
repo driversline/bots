@@ -53,7 +53,7 @@ const serverPort = 25565;
 
                     await client.sendMessage(message.chatId, { message: onlineMessage });
                 } catch (error) {
-                    await client.sendMessage(message.chatId, { message: 'Unreachable' });
+                    await client.sendMessage(message.chatId, { message: 'unreachable' });
                 }
             }
         }
