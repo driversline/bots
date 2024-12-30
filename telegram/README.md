@@ -1,8 +1,8 @@
-**`telegram / app / command.js`**
+**`app / command.js`**
 > Dependencies: `telegram`, `input`, `minecraft-server-util`
 
-**`telegram / app / session.js`**
+**`app / session.js`**
 > Dependencies: `telegram`, `input`
 
-**`telegram / premium / respond.js`**
+**`premium / respond.js`**
 > Dependencies: `telegraf`
