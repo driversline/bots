@@ -1,12 +1,12 @@
 # command.js: 
-* libs
+- libs
 
 ```bash
 telegram, input, minecraft-server-util
 ```
 
 # session.js: 
-* libs
+- libs
 
 ```bash
 telegram, input
