@@ -1,5 +1,5 @@
-# respond.js \ libs
+## respond.js
 
 ```bash
-telegraf
+npm install telegraf
 ```
