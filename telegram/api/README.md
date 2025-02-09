@@ -1,11 +1,11 @@
-# command.js \ libs
+# command.js
 
 ```bash
-telegram, input, minecraft-server-util
+npm install telegram input minecraft-server-util
 ```
 
-# session.js \ libs
+# session.js
 
 ```bash
-telegram, input
+npm install telegram input
 ```
